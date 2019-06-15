@@ -6,13 +6,13 @@
   "author": "RME <robert.meschkat@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "start:dev": "NODE_ENV=development webpack",
-    "run:dev": "NODE_ENV=development nodemon build/index.js"
+    "install": "node_modules/.bin/webpack",
+    "start": "node build/index.js",
+    "dev": "webpack --watch"
   },
   "devDependencies": {
     "@types/node": "^12.0.4",
-    "nodemon": "^1.19.1",
+    "nodemon-webpack-plugin": "^4.0.8",
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
     "webpack": "^4.32.2",
@@ -24,6 +24,7 @@
     "@types/express": "^4.16.1",
     "botbuilder": "^4.4.0",
     "botbuilder-teams": "^0.2.6",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1"
   }
 }

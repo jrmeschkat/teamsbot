@@ -4,15 +4,26 @@ import { BotFrameworkAdapter, TurnContext } from 'botbuilder';
 import { EchoBot } from './bot';
 
 const app = express();
-const { PORT = 3000 } = process.env;
+const { PORT = 3000, BOT_APP_ID, BOT_APP_PASSWD } = process.env;
 
 const echo = new EchoBot();
 
 const adapter = new BotFrameworkAdapter({
-  // appId: process.env.MICROSOFT_APP_ID,
-  // appPassword: process.env.MICROSOFT_APP_PASSWORD
-  appId: '20ad4a1c-0c4f-4a01-89f5-7021fad52bf7',
-  appPassword: 'bcS2TjUWKQE2LF[sA1B7TRq+JRzjaA:['
+  appId: BOT_APP_ID,
+  appPassword: BOT_APP_PASSWD
+});
+
+app.get('/', (req: Request, res: Response) => {
+  res.send(`
+  <html>
+  <head>
+    <title>Teamsbot - UniKS</title>
+  </head>
+  <body>
+    <h1>Hello from Teamsbot - UniKS</h1>
+  </body>
+  </html>
+  `);
 });
 
 app.post('/api/messages', (req: Request, res: Response) => {
