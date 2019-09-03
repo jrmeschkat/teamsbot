@@ -1,0 +1,25 @@
+{
+  "urls": [],
+  "qnaList": [
+    {
+      "id": 0,
+      "answer": "My name is UniKS-Bot.",
+      "source": "custom editorial",
+      "questions": [
+        "what is your name?"
+      ],
+      "metadata": []
+    },
+    {
+      "id": 0,
+      "answer": "I can do the following:\n* not much\n* nothing",
+      "source": "custom editorial",
+      "questions": [
+        "what can you do?"
+      ],
+      "metadata": []
+    }
+  ],
+  "files": [],
+  "name": "qna"
+}

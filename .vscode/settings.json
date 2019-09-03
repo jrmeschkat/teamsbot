@@ -1,8 +1,0 @@
-{
-    "git.ignoreLimitWarning": true,
-    "appService.zipIgnorePattern": [
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "None",
-    "appService.deploySubpath": ""
-}

@@ -1,0 +1,8 @@
+# Name
+- my name is {firstname=john} {lastname=doe}
+- my name is {firstname=john}
+- i'm {firstname=john} {lastname=doe}
+- i'm {firstname=john}
+- i am called {firstname=john} {lastname=doe}
+- i am called {firstname=john}
+

@@ -1,0 +1,113 @@
+{
+  "intents": [
+    {
+      "name": "Name"
+    }
+  ],
+  "entities": [
+    {
+      "name": "firstname",
+      "roles": []
+    },
+    {
+      "name": "lastname",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "my name is john doe",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "lastname",
+          "startPos": 16,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "my name is john",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "i'm john doe",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "lastname",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "i'm john",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i am called john doe",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "lastname",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i am called john",
+      "intent": "Name",
+      "entities": [
+        {
+          "entity": "firstname",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "luis",
+  "desc": "",
+  "culture": "en-us"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "jrmbot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "jrmbot",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "1"
+        },
+        {
+            "type": "qna",
+            "name": "qna",
+            "kbId": "e326cafe-7f0e-4f93-873b-f50775514a1d",
+            "subscriptionKey": "jQrpA1mjjn0No+6FtO9o8Q==!gADdA2YPVvqBiHcsBFMKpjtQ6wPsa+1Bj+mpIHCyFuBLfB5VqIc7pvUjkAWQSKo4",
+            "endpointKey": "bfS83F6s86mFXk1YCF2rZw==!UHdFaqQhd5t655r8mo52dKiwUoROEy/ooTDd2Zgp9bkBhjve86T1kwmrXfLMslpP",
+            "hostname": "https://jrmbot-qnamaker.azurewebsites.net/qnamaker",
+            "id": "3"
+        },
+        {
+            "type": "luis",
+            "name": "luis",
+            "appId": "d06754c1-a12b-4957-81e4-f9e3d5047bba",
+            "version": "0.1",
+            "authoringKey": "8Ndirgm0a77ahV5as/8JvA==!gIlzD2adAzjjyr77AgAiBul1E2jAqQjIVsxzcqQxhKC4kE6oAOSiRcZSbhSBQGNi",
+            "subscriptionKey": "nAzZnR+94yjyMfi0ifyOtg==!wN8bDDf/lZcSjUXqaa0xFLl7MmeFFFX7LvBlc2/ynsK71tgK8VAksjyCRb4WWAXh",
+            "region": "westus",
+            "id": "4"
+        }
+    ],
+    "padlock": "FDa9YLbwCvKLcSeU6utW5A==!7Ij2DDDfR9//1v/kR0JONsy0lqLgn6V99KXavJc9tpAoiZqOG0Ro1RmE7fUHx3IF",
+    "version": "2.0"
+}
